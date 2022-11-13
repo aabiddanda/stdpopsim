@@ -3,11 +3,13 @@ stdpopsim/_version.py
 docs/_build
 docs/_ext
 docs/parameter_images
+docs/species_rst
 .*.swp
 build
 dist
 stdpopsim.egg-info
-.coverage
+.coverage*
 htmlcov
 _test_cache
 test_cache
+.python-version

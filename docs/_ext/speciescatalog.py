@@ -642,6 +642,10 @@ class SpeciesCatalogDirective(SphinxDirective):
                 dfes_section += self.dfe_section(species, dfe)
             section += dfes_section
             section += nodes.transition()
+        os.makedirs("species_rst/", exist_ok=True)
+        fname = f"species_rst/{species.id}.rst"
+        with open(fname, "w+") as species_f:
+            species_f.write(section.pformat())
         return [species_target, section]
 
 
